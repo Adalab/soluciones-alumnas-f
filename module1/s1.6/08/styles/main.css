@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+
+}
+
+.main {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100vw;
+    background-color: grey;
+    min-height: 60px;
+}
+
+.title {
+    margin: 0px;
+    padding: 0px;
+}
+
+.link-container {
+    background-color: green;
+    margin: 0px;
+}
+
+.link-item {
+    display: block;
+}
+
+.article {
+    background-color: yellow;
+}
+
+.article-text {
+    padding: 0 15px;
+    margin: 0px;
+}
+
+.article-title {
+    padding: 15px;
+    margin: 0px;
+}
+
+.aside {
+    background-color: rgb(59, 57, 57);
+    padding: 15px;
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .image {
+        display: none;
+    }
+
+}
+
+@media all and (min-width:768px) and (max-width: 999px) {
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .link-container {
+        flex-basis: 30%;
+        display: inline-table;
+    }
+
+    .article {
+        flex-basis: 70%;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .article-text {
+        flex-basis: 60%;
+    }
+
+    .image-container {
+        flex-basis: 40%;
+        background-color: orange;
+        height: 200px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-image {
+        padding-top: 15px;
+        display: inline-block;
+    }
+
+    .aside {
+        flex-basis: 70%;
+        transform: translatex(43%);
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    .main {
+        display: flex;
+    }
+
+    .link-container {
+        flex-basis: 25%;
+        display: inline-table;
+    }
+
+    .article {
+        flex-basis: 50%;
+        box-sizing: content-box;
+        margin: 0 15px 0 15px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .article-text {
+        flex-basis: 60%;
+    }
+
+    .image-container {
+        flex-basis: 40%;
+        background-color: orange;
+        height: 200px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-image {
+        padding-top: 15px;
+        display: inline-block;
+    }
+
+    .aside {
+        flex-basis: 25%;
+        display: inline-table;
+    }
+}
