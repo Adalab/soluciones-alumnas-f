@@ -1,0 +1,18 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+.main_container {width: 30%; background:#f7f7f7;margin: 0 auto; padding: 20px;}
+.label_top {display: block;}
+.fakelabel {width: 0; height: 0; display: block; overflow: hidden;}
+.container_half_width {display: flex; justify-content: space-between;}
+.surname {display: flex;}
+.surname input {align-self: flex-end;}
+.birthday_text {margin: 0;}
+.container_full_width , .birthday_text , .send{margin-top: 10px;}
+.full_width {width: 100%;}
+.birthday {display: flex; justify-content: space-between;}
+.birthday_one {width: 30%;}
+.birthday_two {flex-grow: 2; margin: 0 5px;}
+.gendre_select,.ubicacion_select {width: 100%;}
+.send {display: flex; justify-content: flex-end;}
+.beautiful_button {background: rgb(88, 88, 255); color: white; appearance: none; padding: 10px; border-radius: 10px; border: 2px solid white; }
+.beautiful_button:hover {background: white; border: 2px solid rgb(88, 88, 255); color: rgb(88, 88, 255);}
+select {background: white;;}
