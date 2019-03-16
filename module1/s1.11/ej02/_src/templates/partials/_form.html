@@ -1,0 +1,131 @@
+<div class="form">
+    <fieldset>
+        <form action="" method="post">
+
+            <!-- first & lastname -->
+            <div class="content-input">
+                <div class="boxDouble">
+                    <div class="boxDouble__item">
+                        <label class="content-input__label" for="firstName">Nombre</label>
+                        <input class="content-input__input" type="text" id="firstName" name="firstName"
+                            placeholder="Nombre" tabindex="0" required />
+                    </div>
+
+                    <div class="boxDouble__item">
+                        <label class="visually-hidden" for="lastName">Apellidos</label>
+                        <input class="content-input__input" type="text" id="lastName" name="lastName"
+                            placeholder="Apellidos" tabindex="0" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- username -->
+            <div class="content-input inputInside">
+                <label class="content-input__label" for="inputInside">Nombre de usuario</label>
+                <div class="inputRelative">
+                    <input class="content-input__input" type="text" id="inputInside" name="inputInside" tabindex="0" required />
+                    <span class="content-input__label--extra">@gmail.com</span>
+                </div>
+            </div>
+
+            <!-- password -->
+            <div class="content-input">
+                <label class="content-input__label" for="password">Contraseña</label>
+                <input class="content-input__input" type="password" id="password" name="password" tabindex="0" required />
+            </div>
+
+            <!-- confirm password -->
+            <div class="content-input">
+                <label class="content-input__label" for="confirm">Confirma tu contraseña</label>
+                <input class="content-input__input" type="password" id="confirm" name="confirm" tabindex="0" required />
+            </div>
+
+            <!-- birth date -->
+            <div class="content-input">
+                <fieldset>
+                    <legend class="content-input__label">Fecha de nacimiento</legend>                    
+                    <div class="boxSelect">
+                        <!-- day -->
+                        <span class="boxSelect__item">
+                            <label class="visually-hidden" for="day">Día</label>
+                            <input class="content-input__input" type="text" id="day" name="day" tabindex="0" placeholder="Día" />
+                        </span>
+                        <!-- month -->
+                        <span class="boxSelect__item">
+                            <label class="visually-hidden" for="month">Mes</label>
+                            <select class="boxSelect__item--select boxSelect__item--icon" name="month" id="month">
+                                <option value="0">Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                        </span>
+                        <!-- year -->
+                        <span class="boxSelect__item">
+                            <label class="visually-hidden" for="year">Año</label>
+                            <input class="content-input__input" type="text" id="year" name="year" tabindex="0"
+                                placeholder="Año" />
+                        </span>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- gender -->
+            <div class="content-input">
+                <label class="content-input__label" for="gender">Sexo</label>
+                <select class="boxSelect__item--select boxSelect__item--icon" name="gender" id="gender">
+                    <option value="0">Selecciona tu género</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                </select>
+            </div>
+
+            <!-- phone -->
+            <div class="content-input inputInside">
+                <label class="content-input__label" for="phone">Teléfono móvil</label>
+                <div class="inputRelative inputRelative--right">
+                    <span class="content-input__label--phone">
+                        <select name="phone" id="phone" class="content-input__select--phone boxSelect__item--icon" autocomplete="off">
+                            <option value="España">ES</option>
+                            <option value="Alemania">DE</option>
+                            <option value="Francia">FR</option>
+                            <option value="Italia">IT</option>
+                        </select>
+                    </span>
+                    <input class="content-input__input" type="tel" id="mobile" name="mobile" tabindex="0" placeholder="+34" pattern="[A-Z]{3}[0-9]{4}" />
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="content-input">
+                <label class="content-input__label" for="email">Dirección de correo electrónico actual</label>
+                <input class="content-input__input" type="email" id="email" name="email" tabindex="0" required />
+            </div>
+
+            <!-- country -->
+            <div class="content-input">
+                <label class="content-input__label" for="country">Ubicación</label>
+                <select class="boxSelect__item--select boxSelect__item--icon" name="country" id="country">
+                    <option value="1">España</option>
+                    <option value="2">Alemania</option>
+                    <option value="2">Francia</option>
+                    <option value="2">Italia</option>
+                </select>
+            </div>
+
+            <!-- button -->
+            <div class="content-input">
+                <button class="btn" type="submit" value="Siguiente paso">Siguiente paso</button>
+            </div>
+
+        </form>
+    </fieldset>
+</div>

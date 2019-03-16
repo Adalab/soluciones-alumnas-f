@@ -1,0 +1,206 @@
+@import 'core/settings';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+input,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+body {
+    background-color: $colorWhite;
+    height: 100vh;
+    font-family: $fontText;
+    font-size: $sizeText;
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.page {
+    margin: 0 auto;
+}
+
+.form {
+    background-color: #f1f1f1;
+    border-radius: $pixelFive;
+    padding: $padBorders/2;
+}
+
+.content-input {
+    margin-bottom: $pixelFive*5;
+}
+
+.content-input {
+    .content-input__label {
+		font-weight: $fontTextBold;
+		margin-bottom: $pixelFive;
+		display: block;
+    }
+    .content-input__input {
+        border-radius: $pixelFive;
+        border: $borderGrey;
+        padding: $pixelFive*2;
+        width: 100%;
+        height: 40px;
+    }
+}
+
+.boxDouble {
+    display: block;
+}
+
+.boxDouble__item {
+    width: 100%;
+    &:first-child {
+        margin-bottom: $pixelFive*3
+    }
+}
+
+.inputRelative {
+    position: relative;
+    border-radius: $pixelFive;
+    background: $colorWhite;
+    height: 40px;
+    display: flex;
+	border: $borderGrey;
+	overflow: hidden;
+    .content-input__label--extra {
+        position: absolute;
+        right: $pixelFive*3;
+        top: 8px;
+        opacity: 0.7;
+    }
+    .content-input__label--phone {
+        position: absolute;
+        left: $pixelFive*3;
+        top: 8px;
+    }
+    .content-input__select--phone {
+        border: 0;
+		padding-right: $pixelFive*3;
+		background-color: transparent;
+    }
+}
+
+.inputInside {
+    .content-input__input {
+		border:0;
+        // width: 60%;
+        height: auto;
+		background-color: transparent;
+		padding-right: 40%
+    }
+}
+
+.inputRelative--right {
+    justify-content: flex-end;
+    .content-input__input {
+		width: 80%;
+		padding-left: 0;
+    }
+}
+
+.boxSelect {
+    display: flex;
+    align-items: center
+}
+
+.boxSelect__item {
+    margin-right: $pixelFive*3;
+    flex: 1;
+    &:last-child {
+        margin-right: 0
+    }
+}
+
+.boxSelect__item--select {
+    border-radius: $pixelFive;
+    border: $borderGrey;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.boxSelect__item--icon {
+	background: url($imgPath + $imgArrow) no-repeat $bgSelect;
+	background-position: 92% center;
+	background-size: $pixelFive*2;
+	cursor: pointer;
+}
+
+.w-100 {
+    width: 100%
+}
+
+/*hidden input*/
+
+.visually-hidden {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.visually-hidden a:focus,
+.visually-hidden input:focus,
+.visually-hidden button:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+.btn {
+	background-color: $colorBtn;
+	padding: $pixelFive*2;
+	border-radius: $pixelFive;
+	border: $borderGrey;
+	color: $colorWhite;
+	font-weight: $fontTextBold;
+	float: right;
+	cursor: pointer;
+}
+
+@media all and (min-width:768px) {
+    .page {
+		padding: 30px 0;
+        max-width: 620px;
+    }
+    .boxDouble {
+        display: flex;
+        align-items: flex-end
+    }
+    .boxDouble__item {
+        &:first-child {
+            margin-right: $pixelFive*3;
+            margin-bottom: 0
+        }
+    }
+	.inputInside {
+		.content-input__input {
+			padding-right: 20%;
+		}
+	}
+	
+	.inputRelative--right {
+		.content-input__input {
+			width: 90%
+		}
+	}
+	.boxSelect__item--icon {
+		background-position: 98% center;
+	}
+}
