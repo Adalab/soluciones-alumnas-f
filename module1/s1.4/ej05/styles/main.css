@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 31, 230);
+    width: 100%;
+    height:100%;
+
+}
+.content{
+    min-height: 100vh;   
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.c-header{
+background-color: yellow;
+flex-shrink: 0;
+/* flex-shrink en coge el item para que todos entren en el container. por defecto es 0 por eso si se quita aquí sigue funcionando */
+}
+.c-main{
+background-color: blue;
+flex-shrink: 0;
+flex-grow: 1;
+/* flex-grow ensancha el item. por defecto esta a 0 también */
+/*  */
+}
+
+.c-foot{
+    background-color: green;
+    flex-shrink: 0;
+}
