@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.body {
+    min-height: 100vh;
+    max-width: 960px;
+    width: 100%;
+}
+
+.header {
+    background-color: salmon;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.aside__one {
+    background-color: yellow;
+}
+
+.article {
+    background-color: rgb(0, 153, 255);
+}
+.aside__two {
+    background-color: rgb(206, 57, 144);
+}
+
+.footer {
+    background-color: rgb(97, 238, 116);
+}
