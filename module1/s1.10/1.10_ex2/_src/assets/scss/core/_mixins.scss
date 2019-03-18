@@ -1,0 +1,11 @@
+@mixin centercontent() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin button() {
+    background-color: red;
+    border-radius: 5px;
+    height: 45px;
+}
