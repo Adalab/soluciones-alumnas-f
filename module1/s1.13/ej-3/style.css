@@ -1,0 +1,28 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.popup {
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  line-height: 150px;
+  color: green;
+  font-weight: bold;
+  text-transform: capitalize;
+  transform: translate(-50%, 1000px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transition: transform ease 1s;
+}
+
+.page:hover .popup {
+  transform: translate(-50%, -50%);
+}
