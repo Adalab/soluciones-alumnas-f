@@ -45,10 +45,7 @@ body {
     transition: all .3s ease;
 }
 
-.input__email {
-    position: relative;
-}
-
+.input__email,
 .input__password {
     position: relative;
 }
