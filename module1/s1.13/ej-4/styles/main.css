@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: introText 2s ease 1s 1;
+}
+
+@keyframes introText {
+    0% {
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
