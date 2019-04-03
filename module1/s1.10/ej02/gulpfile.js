@@ -125,7 +125,7 @@ gulp.task('styles-dist', function(done) {
     }))
     .pipe(autoprefixer({
       browsers: [
-        'last 2 versions',
+        'last 5 versions',
         'ie >= 10'
       ],
       cascade: false
