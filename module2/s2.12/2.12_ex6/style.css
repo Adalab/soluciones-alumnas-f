@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'chalk';
+  src: url('chalk.ttf');
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'chalk';
+  font-size: 30px;
+}
+
+.container {
+  list-style: none;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentText {
+  margin-right: 30px;
+}
+
+.contentSelect {
+  font-family: 'chalk';
+  font-size: 20px;
+}
+
+.blanco {
+  color: #fff;
+}
+.azul {
+  color: blue;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+.amarillo {
+  color: yellow;
+}
+.rosa {
+  color: pink;
+}
