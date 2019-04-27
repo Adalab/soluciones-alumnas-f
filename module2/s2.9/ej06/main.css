@@ -1,0 +1,29 @@
+.grape {
+  height: 40px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: purple;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.grapes {
+  display: flex;
+}
+
+.image {
+  height: 260px;
+  width: 485px;
+  background-image: url('https://edisciplinas.usp.br/pluginfile.php/4377279/course/section/2097528/o-FIREWORKS.jpg');
+  background-size: cover;
+}
+
+.message {
+  font-size: 40px;
+  text-align: center;
+  width: 485px;
+  position: absolute;
+  top: 20%;
+  color: white;
+  font-weight: bold;
+}
