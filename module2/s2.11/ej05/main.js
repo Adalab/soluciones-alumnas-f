@@ -15,6 +15,10 @@ let savedColor = localStorage.getItem('color');
         input2.setAttribute('checked', '');
         body.classList.remove('light');
         body.classList.add('dark');
+    } else {
+        input1.setAttribute('checked', '');
+        body.classList.remove('dark');
+        body.classList.add('light');
     }
 
 function changeColor(event) {
@@ -23,7 +27,7 @@ function changeColor(event) {
         body.classList.remove('dark');
         body.classList.add('light');
         localStorage.setItem('color', guilty);
-    } else if (guilty === 'dark') {
+    } else {
         body.classList.remove('light');
         body.classList.add('dark');
         localStorage.setItem('color', guilty);
@@ -33,4 +37,3 @@ function changeColor(event) {
 for (const item of input) {
     item.addEventListener('change', changeColor);
 }
-
