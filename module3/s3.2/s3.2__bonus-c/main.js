@@ -6,11 +6,9 @@ class Polygon {
     this.base = base;
     this.height = height;
   }
-
   perimeter() {
-    return this.base * this.numberOfSides;
+    return this.numberOfSides * this.base;
   }
-
   area() {
     return this.base * this.height;
   }
@@ -21,20 +19,21 @@ class Square extends Polygon {
     super(4, base, base);
   }
 
-  get base() {
+  get getBase() {
     return super.base;
   }
 
-  set base(newBase) {
+  set setBase(newBase) {
     super.base = newBase;
+    super.height = newBase;
   }
 }
 
-const MySquare = new Square(7);
-const inicialArea = MySquare.area();
+const square1 = new Square(7);
 
-MySquare.base = 47;
-const changedArea = MySquare.area();
+const originalArea = square1.area();
+console.log('original area', originalArea);
 
-console.log('inicialArea', inicialArea);
-console.log('changedArea', changedArea);
+square1.setBase = 47;
+const newArea = square1.area();
+console.log('new area', newArea);
