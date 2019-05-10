@@ -1,0 +1,10 @@
+.text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background__red {
+  background: rgb(180, 28, 17);
+}
