@@ -1,0 +1,19 @@
+
+.collapsible {
+  background-color: lightgrey;
+  padding: 10px 30px;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col {
+  background-color: rgb(199, 221, 210);
+  margin: 0;
+  padding: 20px;
+}
+.collapsible__content {
+  display: none;
+}
