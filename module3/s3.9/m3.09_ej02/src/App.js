@@ -16,33 +16,27 @@ class App extends React.Component {
     const target = e.currentTarget.id;
     
     this.setState((prevState) => {
-      let newId;
-      if(prevState.isOpen === target) {
-        newId = 'col99';
-      } else {
-        newId = target;
-      }
       return {
-        isOpen: newId
+        isOpen: prevState.isOpen === target ? 'col99' : target
       }
     });
   }
   render() {
     return (
       <div className="App">
-        {shipsArr.palettes.map((data, indexCol, indexCont) =>
-          <div>
+        {shipsArr.palettes.map((data, index) =>
+          <div key={`group${index}`}>
             <Collapsible 
               name={data.name}
-              symbol={this.state.isOpen === `col${indexCol}` ? 'fas fa-minus' : 'fas fa-plus'}
-              key={`col${indexCol}`} 
-              id={`col${indexCol}`}
+              symbol={this.state.isOpen === `col${index}` ? 'fas fa-minus' : 'fas fa-plus'}
+              key={`col${index}`} 
+              id={`col${index}`}
               openPanel={this.openPanel}
             />
             <Content 
               from={data.from} 
-              key={`cont${indexCont}`}
-              open={this.state.isOpen === `col${indexCol}` ? '' : 'collapsible__content'}
+              key={`content${index}`}
+              open={this.state.isOpen === `col${index}` ? '' : 'collapsible__content'}
             />
           </div>
         )}
